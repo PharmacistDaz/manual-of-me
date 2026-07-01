@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual of Me - Darren</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #2c2c2a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 50px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="rgba(255,255,255,0.1)"/></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.5;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 50px;
+        }
+        
+        .section {
+            margin-bottom: 45px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .section-title .icon {
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-content {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.8;
+        }
+        
+        .section-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .section-content li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+        }
+        
+        .section-content li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #764ba2;
+            font-weight: bold;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box h3 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .highlight-box ol {
+            padding-left: 20px;
+            color: #444;
+        }
+        
+        .highlight-box li {
+            margin: 10px 0;
+        }
+        
+        .highlight-box li strong {
+            color: #764ba2;
+        }
+        
+        .footer {
+            background: #f5f7fa;
+            padding: 30px 50px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 30px;
+            }
+            
+            .header h1 {
+                font-size: 36px;
+            }
+            
+            .content {
+                padding: 30px 25px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Manual of Me</h1>
+            <div class="subtitle">Darren</div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">☀️</span>
+                    Work rhythm & productivity
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Most productive during early hours of the day, especially after the first coffee</li>
+                        <li>Prefers to handle document review and response creation during morning hours when focus is highest</li>
+                        <li>Values focused work time in quiet environments, sometimes using instrumental music to maintain concentration</li>
+                        <li>Blocks out lunch breaks and appreciates when these are honored by colleagues</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">💬</span>
+                    Communication style
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Highly responsive to messages, often responding outside of work hours (though doesn't expect the same from others)</li>
+                        <li><strong>Quick questions:</strong> Welcomes Teams messages or emails, known for prompt responses</li>
+                        <li><strong>Complex discussions:</strong> Prefers calls followed by email summaries documenting actions</li>
+                        <li><strong>Virtual meetings:</strong> Sometimes prefers camera off but recognizes the value of video for team interaction</li>
+                        <li><strong>Meeting preferences:</strong> Most productive in sessions up to one hour; values breaks in longer meetings</li>
+                        <li>Thoughtfully schedules email sends during work hours to respect others' boundaries</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">🎯</span>
+                    Feedback approach
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Open to immediate feedback when appropriately prefaced and given choice about timing</li>
+                        <li>Appreciates written summaries for complex feedback to allow proper processing</li>
+                        <li>Values time to reflect on feedback to respond thoughtfully ("mind" over "heart")</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">🧩</span>
+                    Problem-solving & decision-making
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Thrives in collaborative brainstorming environments</li>
+                        <li>Processes information by reflecting on others' contributions before forming own thoughts</li>
+                        <li>Prefers starting with high-level overviews before diving into details</li>
+                        <li>Values iterative approach to building understanding</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">📋</span>
+                    Task management
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Organizes work by assigning priorities and deadlines to tasks</li>
+                        <li>Welcomes verbal requests but appreciates follow-up messages for tracking</li>
+                        <li>Values understanding the reasoning behind assigned priorities</li>
+                        <li>Uses calendar blocking for focused work time</li>
+                        <li>Maintains an open calendar for transparency about availability</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">🤝</span>
+                    Team collaboration
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Prefers to listen to others' thoughts before sharing own perspectives</li>
+                        <li>Provides honest feedback while remaining constructive</li>
+                        <li>Champions regular team updates and weekly highlight reports</li>
+                        <li>Values team environments where members feel respected and able to challenge ideas</li>
+                        <li>Believes in the strength of diverse thinking while maintaining professional discourse</li>
+                        <li>Handles disagreements with focus on ideas rather than personal criticism</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">
+                    <span class="icon">🏢</span>
+                    Work environment
+                </h2>
+                <div class="section-content">
+                    <ul>
+                        <li>Prefers quiet or minimal verbal distractions for focused work</li>
+                        <li>Uses instrumental music to maintain concentration when working solo</li>
+                        <li>Optimal meeting length: up to one hour</li>
+                        <li>Values regular breaks for maintaining focus and processing information</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>Best ways to work with Darren</h3>
+                <ol>
+                    <li><strong>For quick questions:</strong> Feel free to reach out via Teams or email — you'll likely get a prompt response</li>
+                    <li><strong>For complex matters:</strong> Schedule a call but follow up with an email summarizing key points and actions</li>
+                    <li><strong>When seeking input:</strong> Present a high-level overview first, then be ready to dive deeper into details</li>
+                    <li><strong>For task requests:</strong> Explain the priority level and reasoning, ideally following up verbal discussions with written details</li>
+                    <li><strong>During team discussions:</strong> Give him time to process others' input before expecting his contribution</li>
+                    <li><strong>For meetings:</strong> Schedule during morning hours when possible, respect lunch blocks, and keep to one hour when feasible</li>
+                </ol>
+            </div>
+            
+            <div class="section-content" style="margin-top: 30px; font-style: italic; color: #666; border-top: 1px solid #e0e0e0; padding-top: 20px;">
+                <strong>Remember:</strong> While Darren is highly responsive, he thoughtfully considers all inputs and values time for reflection on complex matters. His approach combines quick responsiveness with careful consideration of issues.
+            </div>
+        </div>
+        
+        <div class="footer">
+            Manual of Me - Created for better collaboration and understanding
+        </div>
+    </div>
+</body>
+</html>
